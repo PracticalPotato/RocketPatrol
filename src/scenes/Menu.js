@@ -51,11 +51,10 @@ class Menu extends Phaser.Scene {
                 spaceshipSpeed: 3,
                 gameTimer: 60000,
             }
-            // EDITED SOUND FOR OBNOXIOUS VOLUME
-            // Variable creation left here for quick readability of edit
-            // this.sound.play("sfx_select")
-            var selectSound = this.sound.add("sfx_select", {volume: 0.05});
-            selectSound.play();
+            // play select sound
+            this.sound.play("sfx_select")
+            // var selectSound = this.sound.add("sfx_select", {volume: 0.05});
+            // selectSound.play();
             this.scene.start("playScene");
         }
         if (Phaser.Input.Keyboard.JustDown(keyRIGHT)) {
@@ -64,11 +63,10 @@ class Menu extends Phaser.Scene {
                 spaceshipSpeed: 4,
                 gameTimer: 45000,
             }
-            // EDITED SOUND FOR OBNOXIOUS VOLUME
-            // Variable creation left here for quick readability of edit
-            // this.sound.play("sfx_select")
-            var selectSound = this.sound.add("sfx_select", {volume: 0.05});
-            selectSound.play();
+            // play select sound
+             this.sound.play("sfx_select")
+            // var selectSound = this.sound.add("sfx_select", {volume: 0.05});
+            // selectSound.play();
             this.scene.start("playScene");
         }
     }

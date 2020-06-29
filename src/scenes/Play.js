@@ -144,9 +144,9 @@ class Play extends Phaser.Scene {
         this.p1Score += ship.points;
         this.scoreLeft.text = this.p1Score;
 
-        // play sound (EDITED TO CHANGE OBNOXIOUS VOLUME)
-        // this.sound.play("sfx_explosion");
-        var explodeSound = this.sound.add("sfx_explosion", {volume: 0.05});
-        explodeSound.play();
+        // play sound
+        this.sound.play("sfx_explosion");
+        // var explodeSound = this.sound.add("sfx_explosion", {volume: 0.05});
+        // explodeSound.play();
     }
 }
